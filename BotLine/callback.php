@@ -31,8 +31,8 @@ foreach ($events as $event) {
 		//fwd mobile inc from war room to team group.
 		if($event->isGroupEvent() && $event->getGroupId() == 'Ce70fd831ce381db12fcdfbdb1efa3875' && (stripos($text, 'k-plus') !== FALSE || stripos($text, 'k plus') !== FALSE || stripos($text, 'mobile') !== FALSE)) {
 			$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($text);
-			$response = $bot->pushMessage('C5b971f1879eec72b49727f1498177f4c', $textMessageBuilder);
-			$response = $bot->pushMessage('Cb74bc2030e0cba40c51e9f77b41fd228', $textMessageBuilder);
+			$response = $bot->pushMessage('C09834eed1c49fc49d7b33cae603086ab', $textMessageBuilder); //core
+			$response = $bot->pushMessage('Cb74bc2030e0cba40c51e9f77b41fd228', $textMessageBuilder); //be
 		}
 		
  		if (strpos($text, '007 อยากรู้') !== FALSE) { //get info from wiki.
